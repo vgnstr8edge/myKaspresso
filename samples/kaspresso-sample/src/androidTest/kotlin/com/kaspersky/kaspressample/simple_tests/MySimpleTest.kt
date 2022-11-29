@@ -19,7 +19,7 @@ import org.junit.Test
  * - screenshots in the device
  * * Also you can observe the test dsl simplifying a writing of any test
  */
-class SimpleTest : TestCase() {
+class MySimpleTest : TestCase() {
 
     @get:Rule
     val runtimePermissionRule: GrantPermissionRule = GrantPermissionRule.grant(
@@ -33,7 +33,7 @@ class SimpleTest : TestCase() {
     @Test
     fun test() = run {
         step("Open Simple Screen") {
-            testLogger.i("I am testLogger")
+            testLogger.i("MY_PERSONAL_TEST")
             device.screenshots.take("Additional_screenshot")
             MainScreen {
                 simpleButton {
@@ -61,6 +61,19 @@ class SimpleTest : TestCase() {
                 }
                 edit {
                     flakySafely(timeoutMs = 7000) { isVisible() }
+                    hasText(R.string.simple_fragment_text_edittext)
+                }
+            }
+        }
+
+        step("Click button_1 and check edit") {
+            SimpleScreen {
+                button1 {
+                    click()
+                    click()
+                }
+                edit {
+                    flakySafely(timeoutMs = 10000) { isVisible() }
                     hasText(R.string.simple_fragment_text_edittext)
                 }
             }

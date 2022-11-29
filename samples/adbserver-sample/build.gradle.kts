@@ -6,6 +6,7 @@ android {
     defaultConfig {
         applicationId = "com.kaspersky.adbserver.sample"
     }
+    namespace = "com.kaspersky.adbserver.sample"
 }
 
 dependencies {

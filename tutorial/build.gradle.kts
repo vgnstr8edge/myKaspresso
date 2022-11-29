@@ -12,6 +12,7 @@ android {
     testOptions {
         execution = "ANDROIDX_TEST_ORCHESTRATOR"
     }
+    namespace = "com.kaspersky.kaspresso.tutorial"
 }
 
 dependencies {

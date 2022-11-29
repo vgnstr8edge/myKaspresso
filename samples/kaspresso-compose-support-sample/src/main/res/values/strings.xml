@@ -5,4 +5,5 @@
     <!-- SimpleFlakyScreen -->
     <string name="simple_flaky_screen_first_button" translatable="false">First button</string>
     <string name="simple_flaky_screen_second_button" translatable="false">Second button</string>
+    <string name="simple_flaky_screen_third_button" translatable="false">Third button</string>
 </resources>

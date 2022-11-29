@@ -6,6 +6,7 @@ plugins {
 
 // TODO: move to publishing convention
 android {
+    namespace = "com.kaspersky.kaspresso"
     libraryVariants.configureEach {
         packageLibraryProvider.configure {
             from("$rootDir/LICENSE.txt")

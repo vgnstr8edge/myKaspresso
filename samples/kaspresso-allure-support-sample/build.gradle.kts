@@ -13,6 +13,7 @@ android {
     testOptions {
         execution = "ANDROIDX_TEST_ORCHESTRATOR"
     }
+    namespace = "com.kaspersky.kaspresso.alluresupport.sample"
 }
 
 dependencies {

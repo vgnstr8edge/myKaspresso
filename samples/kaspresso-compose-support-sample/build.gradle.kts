@@ -40,6 +40,7 @@ android {
         unitTests.isReturnDefaultValues = true
         unitTests.isIncludeAndroidResources = true
     }
+    namespace = "com.kaspersky.kaspresso.composesupport.sample"
 }
 
 dependencies {

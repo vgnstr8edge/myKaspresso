@@ -6,6 +6,7 @@ plugins {
 
 // TODO: move to publishing convention
 android {
+    namespace = "com.kaspersky.components.composesupport"
     libraryVariants.configureEach {
         packageLibraryProvider.configure {
             from("$rootDir/LICENSE.txt")

@@ -15,5 +15,7 @@ object SimpleScreen : KScreen<SimpleScreen>() {
 
     val button2 = KButton { withId(R.id.button_2) }
 
+
+
     val edit = KEditText { withId(R.id.edit) }
 }

@@ -10,7 +10,7 @@ plugins {
 buildscript {
     dependencies {
         classpath(libs.kotlinPlugin)
-        classpath(libs.androidPlugin)
+        classpath("com.android.tools.build:gradle:7.3.1")
     }
 }
 

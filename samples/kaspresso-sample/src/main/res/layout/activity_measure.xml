@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:visibility="visible"
+    tools:visibility="visible">
 
     <TextView
         android:id="@+id/text_view_title"
@@ -11,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:textSize="14pt"
-        android:text="@string/measure_fragment_title"/>
+        android:text="@string/measure_fragment_title"
+        android:textSize="14pt" />
 
     <Button
         android:id="@+id/button_1"
@@ -21,7 +23,7 @@
         android:layout_below="@+id/text_view_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:text="@string/measure_fragment_text_button_1"/>
+        android:text="@string/measure_fragment_text_button_1" />
 
     <Button
         android:id="@+id/button_2"
@@ -30,16 +32,27 @@
         android:layout_below="@+id/button_1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="@string/measure_fragment_text_button_2"/>
+        android:text="Button 2" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Button 3"
+        android:visibility="visible" />
 
     <TextView
         android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_2"
+        android:layout_below="@+id/button_3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="@string/measure_fragment_text_textview"/>
+        android:text="@string/measure_fragment_text_textview"
+        tools:ignore="DuplicateIds" />
 
     <EditText
         android:id="@+id/edit"
@@ -48,7 +61,7 @@
         android:layout_below="@+id/textview"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:text="@string/measure_fragment_text_edittext"/>
+        android:text="@string/measure_fragment_text_edittext" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -56,6 +69,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edit"
         android:layout_marginTop="24dp"
-        android:text="@string/measure_fragment_text_checkbox"/>
+        android:text="@string/measure_fragment_text_checkbox" />
 
 </RelativeLayout>

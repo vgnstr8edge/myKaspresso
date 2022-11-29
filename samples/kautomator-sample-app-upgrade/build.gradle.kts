@@ -7,6 +7,7 @@ android {
         applicationId = "com.kaspersky.kaspresso.sample_upgrade_tests"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    namespace = "com.kaspersky.kaspresso.upgradesample"
 }
 
 dependencies {

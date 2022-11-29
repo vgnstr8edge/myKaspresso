@@ -30,6 +30,7 @@ android {
         unitTests.isReturnDefaultValues = true
         unitTests.isIncludeAndroidResources = true
     }
+    namespace = "com.kaspersky.kaspressample"
 }
 
 dependencies {

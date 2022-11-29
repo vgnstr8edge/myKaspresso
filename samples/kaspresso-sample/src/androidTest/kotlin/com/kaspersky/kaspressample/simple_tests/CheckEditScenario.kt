@@ -12,8 +12,8 @@ class CheckEditScenario<ScenarioData> : BaseScenario<ScenarioData>() {
             SimpleScreen {
                 edit {
                     clearText()
-                    typeText("111")
-                    hasText("111")
+                    typeText("some new text")
+                    hasText("some new text")
                 }
             }
         }
